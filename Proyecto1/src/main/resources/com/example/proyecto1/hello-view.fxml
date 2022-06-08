@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="900.0" spacing="80.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto1.PrincipalController">
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+
+    <TabPane layoutX="108.0" layoutY="131.0" prefHeight="800.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Interprete">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="600.0">
+                        <children>
+                            <Label layoutX="0.0" layoutY="10.0" fx:id="welcomeText" />
+
+                            <HBox layoutX="20.0" layoutY="30.0" prefHeight="400.0" prefWidth="900.0" spacing="50.0" >
+
+                                <TextArea layoutX="14.0" layoutY="17.0" prefHeight="400.0" prefWidth="350.0" />
+                                <TextArea layoutX="14.0" layoutY="17.0" prefHeight="400.0" prefWidth="350.0" />
+
+                            </HBox>
+
+                            <Button layoutX="370.0" layoutY="432.0" onAction="#onHelloButtonClick" text="Traducir" />
+
+                            <TextArea layoutX="14" layoutY="465.0" prefHeight="190.0" prefWidth="750.0" />
+
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="Reportes">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                </content>
+            </Tab>
+        </tabs>
+    </TabPane>
+
+
+</VBox>
